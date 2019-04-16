@@ -1,0 +1,6 @@
+# Descobrir a Área de um Círculo
+import math
+
+r = float(input("Digite um número"))
+area = math.pi * r**2
+print(area)
