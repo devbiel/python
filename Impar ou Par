@@ -1,8 +1,0 @@
-# Python Par ou Impar?
-
-i = input("Digite um número:")
-
-if i % 2==0:
-    print("Número Par:", i)
-else:
-    print("Número impar", i)
