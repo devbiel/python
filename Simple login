@@ -1,0 +1,16 @@
+#This is a simple login
+
+dic = {'user':'admin', 'pass':'password'}
+choice = input("Digite 'Y' para digitar novamente, ou 'N' para sair.")
+
+if choice.upper().lower() == 'y':
+    user = input("Digite o seu Usuário para logar: ")
+    passw = input("Digite a sua senha: ")
+    if user == dic['user'] and passw == dic['pass']:
+        print("Logado com sucesso!")
+    else:
+        print("Usuário ou senha incorreto!")
+elif choice.upper().lower():
+    print("Fim.")
+else:
+    print("Opção inválida")
