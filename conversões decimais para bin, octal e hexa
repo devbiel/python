@@ -1,0 +1,59 @@
+print('Aperte 1 para converter (Decimal) para (Binário).')
+print('Aperte 2 para converter (Decimal) para (Octal).')
+print('Aperte 3 para converter (Decimal) para (Hexa).')
+print()
+ask = int(input('Digite uma das opções para as conversões.'))
+print()
+if ask == 1:
+    x = int(input('Digite um número para a conversão de (Decimal) para (Binário): '))
+    bin = []
+    while x > 1:
+        resto = x % 2
+        print(int(x), "dividido por 2 tem o resto", int(resto))
+        x = x / 2
+        bin.append(int(resto))
+    bin.reverse()
+    print(bin)
+        
+elif ask == 2:
+    x = int(input('Digite um número para a conversão de (Decimal) para (Octal): '))
+    octal = []
+    while x > 1:
+        resto = x % 8
+        print(int(x), "dividido por 8 tem o resto", int(resto))
+        x = x / 8
+        octal.append(int(resto))
+    octal.reverse()
+    print(octal)
+        
+elif ask == 3:
+    x = int(input('Digite um número para a conversão de (Decimal) para (Hexa): '))
+    hexa = []
+    while x > 1:
+        resto = x % 16
+        print(int(x), "dividido por 16 tem o resto", int(resto))
+        x = x / 16
+        hexa.append(int(resto))
+    hexa.reverse()
+    if 10 in hexa:
+        conversao_A = hexa.index(10)
+        hexa[conversao_A] = 'A'
+    elif 11 in hexa:
+        conversao_B = hexa.index(11)
+        hexa[conversao_A] = 'B'
+    elif 12 in hexa:
+        conversao_C = hexa.index(12)
+        hexa[conversao_A] = 'C'
+    elif 13 in hexa:
+        conversao_D = hexa.index(13)
+        hexa[conversao_A] = 'D'
+    elif 14 in hexa:
+        conversao_E = hexa.index(14)
+        hexa[conversao_A] = 'E'
+    elif 15 in hexa:
+        conversao_F = hexa.index(15)
+        hexa[conversao_A] = 'F'
+    print(hexa)
+        
+else:
+    print('Opção errada.')
