@@ -13,7 +13,7 @@ if ask == 1:
         x = x / 2
         bin.append(int(resto))
     bin.reverse()
-    print(bin)
+    print('o resultado é: ', *bin, sep='')
         
 elif ask == 2:
     x = int(input('Digite um número para a conversão de (Decimal) para (Octal): '))
@@ -24,7 +24,7 @@ elif ask == 2:
         x = x / 8
         octal.append(int(resto))
     octal.reverse()
-    print(octal)
+    print('o resultado é: ', *octal, sep='')
         
 elif ask == 3:
     x = int(input('Digite um número para a conversão de (Decimal) para (Hexa): '))
@@ -53,7 +53,7 @@ elif ask == 3:
     elif 15 in hexa:
         conversao_F = hexa.index(15)
         hexa[conversao_A] = 'F'
-    print(hexa)
+    print('o resultado é: ', *hexa, sep='')
         
 else:
     print('Opção errada.')
