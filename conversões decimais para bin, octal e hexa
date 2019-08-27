@@ -57,7 +57,7 @@ elif ask == 3:
     print('o resultado é: ', *hexa, sep='')
     
 elif ask == 4:
-    x = input('Digite um número para a conversão de (Hexa) para (Decimal): ')
+    x = input('Digite os número e letras(EM MAIUSCULO) para a conversão de (Hexa) para (Decimal): ')
     decimal = []
     for i in x:
         decimal.append(i)
